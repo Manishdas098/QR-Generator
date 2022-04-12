@@ -87,7 +87,7 @@ class Qr_genrator:
             qr_code = qrcode.make(qr_data)
             # print(qr_code)
             qr_code = resizeimage.resize_cover(qr_code,[200,200])
-            qr_code.save(str(self.var_name.get())+'.png')
+            qr_code.save(file="Images"+str(self.var_name.get())+'.png')
 #==========================================================================updating variable =======================================================================================#        
            
             self.im = ImageTk.PhotoImage(qr_code)
